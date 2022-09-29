@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_image"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/iconca" />
+
+    <EditText
+        android:id="@+id/playerName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imageView"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/entrance"
+        android:gravity="center"
+        android:hint="@string/enter_name" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/play"
+        style="@style/buttons"
+        android:layout_below="@+id/playerName"
+        android:text="@string/Play" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/score"
+        style="@style/buttons"
+        android:layout_below="@+id/play"
+        android:text="@string/Score" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/setting"
+        style="@style/buttons"
+        android:layout_below="@+id/score"
+        android:text="@string/Settings" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/About"
+        android:layout_below="@+id/setting"
+        style="@style/buttons"
+        android:text="@string/About"/>
+
+
+</RelativeLayout>

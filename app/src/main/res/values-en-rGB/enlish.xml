@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Puzzle_15</string>
+    <string name="title_activity_game">GameActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="Play">Play</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="enter_name">Enter name</string>
+    <string name="setting">Settings</string>
+    <string name="Score">Score</string>
+    <string name="About">About</string>
+    <string name="Settings">Settings</string>
+    <string name="congratulation_you_won">Congratulation you  won</string>
+    <string name="your_score_is">Your score is</string>
+</resources>

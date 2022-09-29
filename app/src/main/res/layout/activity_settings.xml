@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:soundEffectsEnabled="false"
+    android:background="#5b4f81"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/num1"
+        android:layout_marginTop="200dp"
+        style="@style/settingsText"
+        android:gravity="center"
+        android:text="Music" />
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/num1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="195dp"
+        android:max="100"
+        android:layout_marginHorizontal="30dp"
+        android:min="0"/>
+
+    <TextView
+        android:id="@+id/num2"
+        style="@style/settingsText"
+        android:layout_below="@+id/seekBar1"
+        android:layout_marginTop="50dp"
+        android:text="Sound" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="296dp"
+        android:layout_below="@+id/num2"
+        android:max="100"
+        android:min="0"
+        android:layout_marginHorizontal="30dp"/>
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/seekBar2"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/eng"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ang" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uzb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/uzb" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ru"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/ru" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+</RelativeLayout>
